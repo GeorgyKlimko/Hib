@@ -1,0 +1,30 @@
+.sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.sectionHeader {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #34495e;
+  margin: 5px 0;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subsections {
+  margin-left: 15px;
+}
+
+.subsection {
+  padding: 8px;
+  cursor: pointer;
+  background-color: #3a4f63;
+  margin: 3px 0;
+  border-radius: 3px;
+}

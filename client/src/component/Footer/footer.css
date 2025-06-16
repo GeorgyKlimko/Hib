@@ -1,0 +1,183 @@
+.footer {
+  background-color: #2c2f33;
+  color: white;
+  padding: 30px 0;
+  font-family: 'Arial', sans-serif;
+  border-top: 1px solid #40444b;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  flex-wrap: wrap; /* Это добавлено, чтобы элементы могли переходить на новую строку */
+}
+
+/* Блок с информацией */
+.footer-info {
+  flex: 1;
+  max-width: 400px;
+  margin-bottom: 20px; /* Чтобы между блоками было пространство */
+}
+
+.footer-logo {
+  font-family: 'Rubik';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  font-size: 48px;
+  color: #f88400;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer-description {
+  font-family: 'Signika';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  font-display: swap;
+  color: #00d8ff;
+  margin-bottom: 20px;
+}
+
+/* Кнопка Discord */
+.discord-btn {
+  font-family: 'Signika';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  background-color: #7289da;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.3s;
+}
+
+.discord-btn:hover {
+  background-color: #677bc4;
+}
+
+.discord-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Колонки с ссылками */
+.footer-links {
+  display: flex;
+  gap: 30px;
+ /* Позволяет колонкам переходить на новую строку */
+}
+
+.footer-column {
+  min-width: 150px;
+  flex: 1 1 200px; /* Дает колонкам гибкость на мобильных устройствах */
+}
+
+.footer-column-title {
+  font-family: 'Signika';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #7289da;
+}
+
+.footer-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-link {
+  color: #dcddde;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #7289da;
+}
+
+/* Копирайт */
+.footer-copyright {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #40444b;
+  color: #99aab5;
+  font-size: 14px;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center; /* Центрируем содержимое футера */
+    gap: 30px;
+    padding: 0 15px; /* Уменьшаем отступы */
+  }
+
+  .footer-info {
+    text-align: center; /* Центрируем текст внутри блока */
+  }
+
+  .footer-links {
+    width: 100%;
+    justify-content: center; /* Центрируем колонки */
+    gap: 20px;
+  }
+
+  .footer-column {
+    min-width: auto; /* Убираем фиксированную ширину колонок */
+    text-align: center; /* Центрируем заголовки колонок */
+  }
+
+  .footer-logo {
+    font-size: 36px; /* Уменьшаем размер шрифта на мобильных */
+  }
+
+  .footer-description {
+    font-size: 1.3rem; /* Уменьшаем размер шрифта на мобильных */
+  }
+
+  .footer-column-title {
+    font-size: 16px; /* Уменьшаем размер шрифта заголовков */
+  }
+
+  .footer-link {
+    font-size: 14px; /* Уменьшаем размер шрифта ссылок */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-logo {
+    font-size: 28px; /* Дополнительное уменьшение для очень маленьких экранов */
+  }
+
+  .footer-description {
+    font-size: 1.2rem;
+  }
+
+  .discord-btn {
+    font-size: 1rem; /* Уменьшаем размер кнопки */
+    padding: 10px 20px;
+  }
+
+  .footer-copyright {
+    font-size: 12px;
+  }
+}

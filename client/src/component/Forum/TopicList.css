@@ -1,0 +1,32 @@
+.topicContainer {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.topicHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sortSelect {
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: 1px solid #bdc3c7;
+}
+
+.topicCard {
+  border-bottom: 1px solid #ecf0f1;
+  padding: 15px 0;
+}
+
+.topicMeta {
+  display: flex;
+  gap: 15px;
+  color: #7f8c8d;
+  font-size: 0.9em;
+  margin-top: 8px;
+}

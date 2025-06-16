@@ -1,0 +1,115 @@
+.gradient-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #181924 0%, #23243a 100%);
+}
+
+.card {
+  background-color: #2a2a3c;
+  color: #e5e5e5;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 10px;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+  color: #00d8ff;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  color: #a0a0b2;
+}
+
+.cta {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.cta h3 {
+  color: #a3e635;
+  margin-bottom: 1rem;
+}
+
+.cta-button {
+  background: linear-gradient(135deg, #00ffcc, #ff007f);
+  color: #1e1e2f;
+  border: 2px solid #00d8ff;
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.3s ease;
+  box-shadow:
+    0 4px 10px rgba(0, 255, 204, 0.5),
+    0 2px 5px rgba(255, 0, 127, 0.5);
+}
+
+.cta-button:hover {
+  transform: scale(1.1);
+  box-shadow:
+    0 6px 15px rgba(0, 255, 204, 0.7),
+    0 4px 10px rgba(255, 0, 127, 0.7);
+  background: linear-gradient(135deg, #ff007f, #00ffcc);
+}
+
+.card.concise-card {
+  background: linear-gradient(120deg, #23243a 60%, #181924 100%);
+  color: #e5e5e5;
+  padding: 2.5rem 2rem 2rem 2rem;
+  margin: 3rem auto 1.5rem auto;
+  border-radius: 18px;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: 0 6px 32px 0 #00ffcc22;
+}
+
+.card.concise-card h2 {
+  color: #00eaff;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.card.concise-card p {
+  color: #a0a0b2;
+  font-size: 1.08rem;
+}
+
+.cta.concise-cta {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+.cta-button.concise-btn {
+  background: linear-gradient(90deg, #00ffcc 0%, #ff007f 100%);
+  color: #181924;
+  border: none;
+  padding: 0.9rem 2.5rem;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 1.12rem;
+  cursor: pointer;
+  box-shadow: 0 4px 18px #ff007f44;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  transition: 
+    background 0.2s,
+    color 0.2s,
+    box-shadow 0.2s,
+    transform 0.15s;
+}
+
+.cta-button.concise-btn:hover, .cta-button.concise-btn:focus {
+  background: linear-gradient(90deg, #ff007f 0%, #00ffcc 100%);
+  color: #fff;
+  box-shadow: 0 6px 24px #00ffcc66;
+  transform: scale(1.06);
+}
