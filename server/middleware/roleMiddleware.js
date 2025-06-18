@@ -1,8 +1,7 @@
-import  jwt  from "jsonwebtoken"
-import sec from "../config.js"
+const jwt = require('jsonwebtoken');
+const sec = require('../config.js');
 
-
-export default (roles) => {
+module.exports = (roles) => {
     return (req, res, next) => {
         if(req.method === "OPTIONS") {
         next()

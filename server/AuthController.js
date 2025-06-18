@@ -1,10 +1,10 @@
-import Users from "./models/Users.js"
-import Role from "./models/Role.js"
-import bcrypt from 'bcryptjs';
-import sec from "./config.js";
-import jsonwebtoken from "jsonwebtoken"
+const Users = require('./models/Users.js');
+const Role = require('./models/Role.js');
+const bcrypt = require('bcryptjs');
+const sec = require('./config.js');
+const jsonwebtoken = require('jsonwebtoken');
 
-import { validationResult } from "express-validator";
+const { validationResult } = require('express-validator');
 
 const generateAccessToken = (id, roles) => {
     const payload = {
@@ -87,4 +87,4 @@ class AuthController {
     
 }
 
-export default new AuthController;
+module.exports = new AuthController;

@@ -3,4 +3,4 @@ const sec = {
     secret: "Secret"
 }
 
-export default sec;
+module.exports = sec;

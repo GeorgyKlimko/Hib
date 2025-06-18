@@ -23,17 +23,8 @@ export default function Header() {
     <>
       <header className="App-header">
         <nav>
-          <Link to="/">
-            <picture>
-              <source srcSet="Black-White-Bold-Simple-Initials-Name-Logo-Photoroom-_1_.webp" type="image/webp" />
-              <img
-                src="Black-White-Bold-Simple-Initials-Name-Logo-Photoroom-_1_.webp"
-                alt="Название компании"
-                className="logo"
-                width="150"
-                height="40"
-              />
-            </picture>
+          <Link className='link__to-home' to="/">
+          <h2 className="footer-logo">HIB</h2>
           </Link>
 
           <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>

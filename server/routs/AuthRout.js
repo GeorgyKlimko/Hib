@@ -1,7 +1,7 @@
-import { Router } from "express";
-import AuthController from "../AuthController.js";
-import { check } from "express-validator";
-import authMiddleware from "../middleware/authMiddleware.js";
+const { Router } = require('express');
+const AuthController = require('../AuthController.js');
+const { check } = require('express-validator');
+const authMiddleware = require('../middleware/authMiddleware.js');
 
 const authrout = new Router;
 
@@ -15,4 +15,4 @@ authrout.post('/login', authMiddleware, AuthController.login);
 authrout.get('/test',  AuthController.getTest);
 
 
-export default authrout;
+module.exports = authrout;

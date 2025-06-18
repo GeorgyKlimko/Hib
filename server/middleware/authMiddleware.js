@@ -1,8 +1,8 @@
-import  jwt  from "jsonwebtoken"
-import sec from "../config.js"
+const jwt = require('jsonwebtoken');
+const sec = require('../config.js');
 
 
-export default (req, res, next) => {
+module.exports = (req, res, next) => {
    const token = req.cookies.token;
 
    try {
