@@ -21,7 +21,7 @@ const app = express();
 app.use(express.static(path.join(__dirname, '../client/build')));
 
 app.use(cookieParser());
-app.use(cors({ origin: 'http://hibitblack.on:3000', credentials: true }));
+app.use(cors({ credentials: true }));
 app.use(express.json());
 app.use('/api/auth', authrout);
 
