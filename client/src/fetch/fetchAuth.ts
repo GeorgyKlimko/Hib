@@ -2,7 +2,7 @@ import axios from "axios"
 class FetchAuth {
     async login(username: string, password: string) {
         try { 
-            const response = await axios.post("http://hibitblack.online.:8000/api/auth/login", {
+            const response = await axios.post("/api/auth/login", {
                 username: username,
                 password: password
             }, {
@@ -20,7 +20,7 @@ class FetchAuth {
 
     async registration(username: string, password: string) {
         try {
-            const response = await axios.post('http://hibitblack.online.:8000/api/auth/registration',
+            const response = await axios.post('/api/auth/registration',
                 {
                     username: username,
                     password: password,
